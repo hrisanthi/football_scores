@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <title>Football scoreboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/completestyle.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div clas="row">
+    <div id="content"></div>
+
+    <script class="sports-template" type="text/x-handlebars-template">
+      <div class="entry">
+                        <div style="clear:both"></div>
+                        <a target="_blank" href="{{Team1Link}}"><h5 id="team1">{{Team1}}</h5></a>
+                        <h5 id="team1score">{{Team1Score}}</h5>
+                        <p id="time">{{Time}}</p>
+
+                        <a target="_blank" href="{{Team2Link}}"><h5 id="team2">{{Team2}}</h5></a>
+                        <h5 id="team2score">{{Team2Score}}</h5>
+
+                        <p id="earlspicks">Earl's Pick: {{EarlsPicks}}</p>
+
+                        <p><a target="_blank"href="{{ArticleLink}}">{{Article}}</a></p>
+
+                        <p id="preview">{{PreviewGame}}</p>
+
+                    </div>
+</script>
+
+    </div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tabletop.js"></script>
+<script type="text/javascript" src="handlebars/handlebars.js"></script>
+<script src="js/getdata.js"></script>
+<script src="js/modernizr.js"></script>
+
+
+
+
+
+
+</body>
+</html>
